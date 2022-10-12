@@ -3,10 +3,12 @@
 <head>
 	<title>Booklist</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
 </head>
 <body>
-	<h1>Edit book</h1>
-	<div>
+	<div class="container">
+		<div class="col-md-4">
+		<h1>Edit book</h1>
 		<form th:object="${book}" th:action="@{../save}" action="#" method="post">
 		<input type="hidden" id="id" th:field="*{id}" />
 		
@@ -30,8 +32,9 @@
  		 </select>
  		
  		<div style="clear: both; display: block; height: 10px;"></div>
-			<input type="submit" value="Save"></input>
+			<input type="submit" value="Save" class="btn btn-success"></input>
 		</form>
+		</div>
 	</div>
 </body>
 </html>
