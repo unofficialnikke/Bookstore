@@ -31,9 +31,9 @@ public class BookstoreApplication {
 			crepository.save(new Category("Drama"));
 			
 			log.info("save a few books");
-			brepository.save(new Book("J.K. Rowling", "Harry Potter",  "1999", "324253", "24.5", crepository.findByName("Fantasy").get(0)));
-			brepository.save(new Book("Kari Hotakainen", "Juoksuhaudantie", "2002", "324253", "24.00", crepository.findByName("Drama").get(0)));
-			brepository.save(new Book("J. R. R. Tolkien", "The Two Towers", "1954", "998331", "29.00", crepository.findByName("Fantasy").get(0)));
+			brepository.save(new Book("Harry Potter", "J.K. Rowling", "1999", "324253", "24.5", crepository.findByName("Fantasy").get(0)));
+			brepository.save(new Book("Juoksuhaudantie", "Kari Hotakainen", "2002", "324253", "24.00", crepository.findByName("Drama").get(0)));
+			brepository.save(new Book("The Two Towers", "J. R. R. Tolkien", "1954", "998331", "29.00", crepository.findByName("Fantasy").get(0)));
 			
 			User user1 = new User("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6", "USER");
 			User user2 = new User("admin", "$2a$10$0MMwY.IQqpsVc1jC8u7IJ.2rT8b0Cd3b3sfIBGV2zfgnPGtT4r0.C", "ADMIN");
